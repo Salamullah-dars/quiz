@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz Application</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Quiz Application</h1>
+        <div id="auth">
+            <h2>Register/Login</h2>
+            <input type="text" id="username" placeholder="Enter your name" required>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="quiz" style="display: none;">
+            <h2>Quiz Questions</h2>
+            <div id="question-container"></div>
+            <button id="next-button" onclick="nextQuestion()">Next Question</button>
+            <div id="score" style="display: none;"></div>
+            <div id="feedback" style="display: none;"></div>
+        </div>
+
+        <div id="leaderboard" style="display: none;">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboard-list"></ul>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
